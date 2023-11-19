@@ -13,8 +13,7 @@ int main(int argc, char** argv[])
     {
         break;
     }
-    case 'n':
-    case 'N':
+    default:
     {
         return 0;
     }
