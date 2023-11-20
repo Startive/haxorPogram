@@ -25,6 +25,7 @@ int main(int argc, char** argv[])
     if (hWnd == NULL)
     {
         cout << "Geometry Dash is not open!" << endl;
+        system("pause");
         return 1;
     }
 
@@ -37,6 +38,13 @@ int main(int argc, char** argv[])
     char gameModule1[] = "GeometryDash19.exe"; // change if executable name is different
     DWORD gameBaseAdd1 = GetModuleBaseAddress(_T(gameModule1), processID); // get module base address
 
+    if (gameBaseAdd1 == NULL)
+    {
+        cout << "Could not obtrain module base address from " << gameModule1 << endl;
+        cout << "Make sure the executable name matches!" << endl;
+        system("pause");
+        return 1;
+    }
 
     cout << "Spoof attempts (A), or change FPS (F)?: " << endl;
     char op; cin >> op;
@@ -67,7 +75,7 @@ int main(int argc, char** argv[])
     }
     default:
     {
-        cout << "why" << endl;
+        cout << "You did not enter a valid character." << endl;
     }
 
     }

@@ -1,6 +1,6 @@
 #include "includes.hpp"
 
-//functions taken from https://pastebin.com/raw/LdDqc0Tw
+//taken from https://pastebin.com/raw/LdDqc0Tw
 
 DWORD GetModuleBaseAddress(TCHAR* lpszModuleName, DWORD pID) {
     DWORD dwModuleBaseAddress = 0;
