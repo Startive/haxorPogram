@@ -76,6 +76,7 @@ int main(int argc, char** argv[])
     default:
     {
         cout << "You did not enter a valid character." << endl;
+        break;
     }
 
     }
