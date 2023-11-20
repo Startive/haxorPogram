@@ -46,7 +46,7 @@ int main(int argc, char** argv[])
         return 1;
     }
 
-    cout << "Spoof attempts (A), or change FPS (F)?: " << endl;
+    cout << "Spoof attempts (A), or change FPS (F)?: ";
     char op; cin >> op;
 
     switch (op)
